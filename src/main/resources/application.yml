@@ -1,0 +1,35 @@
+# 他们具有层级结构
+# key和value 必须有空格
+# 这里面如果两个都配置了相同的内容，属性文件properties的优先级高于yml文件
+# 如果两个文件的内容内容不同，合并内容
+#修改sprintboot中tomcat的端口号
+server:
+  port: 8081
+  #修改访问路径
+  servlet:
+    context-path: /
+
+student:
+  id: 1
+  name: lisi
+  age: 22
+  hobby:
+    - LOL
+    - CF
+    - DNF
+  lists:
+    - LOL
+    - AAA
+    - BBB
+    - CCC
+  maps:
+    clazz: 151
+    stuno: 100
+  sets:
+    - A
+    - B
+    - C
+    - D
+  birth: 2000/10/02
+aaa:
+  age: ${random.int(1,100)}
